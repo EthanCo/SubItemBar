@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SubTitleBar">
+        <!--右侧文字-->
+        <attr name="right_text" format="string" />
+        <!--右侧文字大小-->
+        <attr name="right_text_size" format="dimension" />
+        <!--右侧文字颜色-->
+        <attr name="right_text_color" format="color" />
+        <!--右侧文字 drawableLeft 图片-->
+        <attr name="right_text_drawableLeft" format="reference" />
+        <!--右侧文字 drawableRight 图片-->
+        <attr name="right_text_drawableRight" format="reference" />
+        <!--右侧文字 drawableLeft 长宽-->
+        <attr name="right_text_drawableLeftSize" format="dimension" />
+        <!--右侧文字 drawableRight 长宽-->
+        <attr name="right_text_drawableRightSize" format="dimension" />
+        <!--右侧文字 drawablePadding-->
+        <attr name="right_text_drawablePadding" format="dimension" />
+
+        <!--左侧文字-->
+        <attr name="left_text" format="string" />
+        <!--左侧文字大小-->
+        <attr name="left_text_size" format="dimension" />
+        <!--左侧文字颜色-->
+        <attr name="left_text_color" format="color" />
+        <!--左侧文字 drawableLeft 图片-->
+        <attr name="left_text_drawableLeft" format="reference" />
+        <!--左侧文字 drawableRight 图片-->
+        <attr name="left_text_drawableRight" format="reference" />
+        <!--左侧文字 drawableLeft 长宽-->
+        <attr name="left_text_drawableLeftSize" format="dimension" />
+        <!--左侧文字 drawableRight 长宽-->
+        <attr name="left_text_drawableRightSize" format="dimension" />
+        <!--左侧文字 drawablePadding-->
+        <attr name="left_text_drawablePadding" format="dimension" />
+    </declare-styleable>
+</resources>
