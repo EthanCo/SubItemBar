@@ -20,9 +20,9 @@
         <!--右侧文字 drawableRight 图片-->
         <!--<item name="right_text_drawableRight"></item>-->
         <!--右侧文字 drawableLeft 长宽-->
-        <item name="right_text_drawableLeftSize">25dp</item>
+        <item name="right_text_drawableLeftSize">20dp</item>
         <!--右侧文字 drawableRight 长宽-->
-        <item name="right_text_drawableRightSize">25dp</item>
+        <item name="right_text_drawableRightSize">20dp</item>
         <!--右侧文字 drawablePadding-->
         <item name="right_text_drawablePadding">5dp</item>
 
@@ -46,6 +46,6 @@
         <!--android 属性-->
         <item name="android:layout_marginLeft">10dp</item>
         <item name="android:layout_marginRight">10dp</item>
-        <item name="android:height">36dp</item>
+        <item name="android:layout_height">36dp</item>
     </style>
 </resources>

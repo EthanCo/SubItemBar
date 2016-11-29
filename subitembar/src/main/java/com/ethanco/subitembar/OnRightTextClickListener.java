@@ -1,7 +1,5 @@
 package com.ethanco.subitembar;
 
-import android.view.View;
-
 /**
  * 右侧文字点击
  *
@@ -10,5 +8,5 @@ import android.view.View;
  */
 
 public interface OnRightTextClickListener {
-    void onClick(View v);
+    void onClick(SubTitleBar bar);
 }

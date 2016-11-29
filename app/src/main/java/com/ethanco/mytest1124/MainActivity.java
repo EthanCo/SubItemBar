@@ -1,8 +1,7 @@
 package com.ethanco.mytest1124;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.ethanco.subitembar.OnLeftTextClickListener;
@@ -18,15 +17,15 @@ public class MainActivity extends AppCompatActivity {
         SubTitleBar subTitleBar = (SubTitleBar) findViewById(R.id.sub_title_bar);
         subTitleBar.addOnLeftTextClickListener(new OnLeftTextClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "左侧被点击", Toast.LENGTH_SHORT).show();
+            public void onClick(SubTitleBar bar) {
+                Toast.makeText(MainActivity.this, "左侧被点击:"+bar.getLeftText(), Toast.LENGTH_SHORT).show();
             }
         });
 
         subTitleBar.addOnRightTextClickListener(new OnRightTextClickListener() {
             @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "右侧被点击", Toast.LENGTH_SHORT).show();
+            public void onClick(SubTitleBar bar) {
+                Toast.makeText(MainActivity.this, "右侧被点击"+bar.getRightText(), Toast.LENGTH_SHORT).show();
             }
         });
     }

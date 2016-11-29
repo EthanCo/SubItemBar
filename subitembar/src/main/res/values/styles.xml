@@ -13,9 +13,9 @@
         <!--右侧文字 drawableRight 图片-->
         <!--<item name="right_text_drawableRight"></item>-->
         <!--右侧文字 drawableLeft 长宽-->
-        <item name="right_text_drawableLeftSize">25dp</item>
+        <item name="right_text_drawableLeftSize">20dp</item>
         <!--右侧文字 drawableRight 长宽-->
-        <item name="right_text_drawableRightSize">25dp</item>
+        <item name="right_text_drawableRightSize">20dp</item>
         <!--右侧文字 drawablePadding-->
         <item name="right_text_drawablePadding">5dp</item>
 
