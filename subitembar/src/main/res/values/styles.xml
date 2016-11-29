@@ -1,20 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="MySubItemBarStyle">
+    <style name="DefSubItemBarStyle">
         <!--右侧文字-->
         <item name="right_text">更多</item>
         <!--右侧文字大小-->
         <item name="right_text_size">14sp</item>
         <!--右侧文字颜色-->
-        <item name="right_text_color">@android:color/holo_blue_dark</item>
+        <item name="right_text_color">@color/bar_secondary_text</item>
         <!--右侧文字 drawableLeft 图片-->
         <!--<item name="right_text_drawableLeft"></item>-->
         <!--右侧文字 drawableRight 图片-->
@@ -31,7 +24,7 @@
         <!--左侧文字大小-->
         <item name="left_text_size">18sp</item>
         <!--左侧文字颜色-->
-        <item name="left_text_color">@android:color/holo_blue_dark</item>
+        <item name="left_text_color">@color/bar_primary_text</item>
         <!--左侧文字 drawableLeft 图片-->
         <!--<item name="left_text_drawableLeft"></item>-->
         <!--左侧文字 drawableRight 图片-->
@@ -42,10 +35,5 @@
         <item name="left_text_drawableRightSize">25dp</item>
         <!--左侧文字 drawablePadding-->
         <item name="left_text_drawablePadding">5dp</item>
-
-        <!--android 属性-->
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
-        <item name="android:height">36dp</item>
     </style>
 </resources>

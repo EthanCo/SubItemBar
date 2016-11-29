@@ -24,19 +24,19 @@ public class SubTitleBar extends FrameLayout {
 
     public SubTitleBar(Context context, AttributeSet attrs) {
         super(context, attrs);
-        initVar(context, attrs);
+        initVar(context, attrs, 0);
     }
 
     public SubTitleBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        initVar(context, attrs);
+        initVar(context, attrs, defStyleAttr);
     }
 
-    private void initVar(Context context, AttributeSet attrs) {
+    private void initVar(Context context, AttributeSet attrs, int defStyleArr) {
         if (attrs == null) {
-            return;
+            throw new IllegalArgumentException("AttributeSet is null");
         }
-        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SubTitleBar);
+        TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.SubTitleBar, defStyleArr, R.style.DefSubItemBarStyle);
         Drawable rightTextDrawableLeft = ta.getDrawable(R.styleable.SubTitleBar_right_text_drawableLeft);
         Drawable rightTextDrawableRight = ta.getDrawable(R.styleable.SubTitleBar_right_text_drawableRight);
         String rightText = ta.getString(R.styleable.SubTitleBar_right_text);
