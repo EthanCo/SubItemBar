@@ -11,6 +11,7 @@
     <include layout="@layout/include_divider" />
 
     <com.ethanco.subitembar.SubTitleBar
+        android:id="@+id/sub_title_bar"
         android:layout_width="match_parent"
         android:layout_height="36dp"
         android:layout_marginLeft="10dp"

@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by EthanCo on 2016/4/7.
  */
@@ -80,6 +83,54 @@ public class SubTitleBar extends FrameLayout {
         tvLeft.setCompoundDrawables(leftTextDrawableLeft, null, leftTextDrawableRight, null);
         tvLeft.setCompoundDrawablePadding(leftTextDrawablePadding);
 
+        tvRight.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OnRightTextClick();
+            }
+        });
+
+        tvLeft.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onLeftTextClick();
+            }
+        });
+    }
+
+    private void onLeftTextClick() {
+        for (OnLeftTextClickListener leftTextClickListener : leftTextClickListeners) {
+            leftTextClickListener.onClick(this);
+        }
+    }
+
+    private void OnRightTextClick() {
+        for (OnRightTextClickListener rightTextClickListener : rightTextClickListeners) {
+            rightTextClickListener.onClick(this);
+        }
+    }
+
+    public CharSequence getRightText() {
+        return tvRight.getText();
+    }
+
+    public CharSequence getLeftText() {
+        return tvLeft.getText();
+    }
+
+    private List<OnLeftTextClickListener> leftTextClickListeners = new ArrayList<>();
+    private List<OnRightTextClickListener> rightTextClickListeners = new ArrayList<>();
+
+    public void addOnLeftTextClickListener(OnLeftTextClickListener leftTextClickListener) {
+        if (!leftTextClickListeners.contains(leftTextClickListener)) {
+            leftTextClickListeners.add(leftTextClickListener);
+        }
+    }
+
+    public void addOnRightTextClickListener(OnRightTextClickListener rightTextClickListener) {
+        if (!rightTextClickListeners.contains(rightTextClickListener)) {
+            rightTextClickListeners.add(rightTextClickListener);
+        }
     }
 
     private void setBounds(Drawable rightTextDrawableLeft, int rightTextDrawableLeftSize) {
