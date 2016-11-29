@@ -35,7 +35,6 @@
 
     <include layout="@layout/include_divider" />
 
-
     <!--使用默认style-->
     <com.ethanco.subitembar.SubTitleBar
         android:id="@+id/sub_title_bar_def_style"
