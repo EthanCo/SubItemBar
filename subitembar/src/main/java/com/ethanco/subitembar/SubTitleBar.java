@@ -110,6 +110,14 @@ public class SubTitleBar extends FrameLayout {
         }
     }
 
+    public void setTvRight(CharSequence text) {
+        this.tvRight.setText(text);
+    }
+
+    public void setTvLeft(CharSequence text) {
+        this.tvLeft.setText(text);
+    }
+
     public CharSequence getRightText() {
         return tvRight.getText();
     }
