@@ -89,7 +89,6 @@ public class SubTitleBar extends FrameLayout {
                 OnRightTextClick();
             }
         });
-
         tvLeft.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -110,11 +109,11 @@ public class SubTitleBar extends FrameLayout {
         }
     }
 
-    public void setTvRight(CharSequence text) {
+    public void setRightText(CharSequence text) {
         this.tvRight.setText(text);
     }
 
-    public void setTvLeft(CharSequence text) {
+    public void setLeftText(CharSequence text) {
         this.tvLeft.setText(text);
     }
 
