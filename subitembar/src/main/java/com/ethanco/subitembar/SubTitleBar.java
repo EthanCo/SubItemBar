@@ -140,6 +140,14 @@ public class SubTitleBar extends FrameLayout {
         }
     }
 
+    public List<OnLeftTextClickListener> getLeftTextClickListeners() {
+        return leftTextClickListeners;
+    }
+
+    public List<OnRightTextClickListener> getRightTextClickListeners() {
+        return rightTextClickListeners;
+    }
+
     public int getOnLeftTextClickListenerCount() {
         return leftTextClickListeners.size();
     }
